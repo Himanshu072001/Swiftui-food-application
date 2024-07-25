@@ -14,6 +14,12 @@
 		499CE04C2C525D5A001B33A7 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE04B2C525D5A001B33A7 /* AppetizerListView.swift */; };
 		499CE04E2C525D6C001B33A7 /* AppetizerOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE04D2C525D6C001B33A7 /* AppetizerOrderView.swift */; };
 		499CE0502C525D84001B33A7 /* AppetizerAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE04F2C525D84001B33A7 /* AppetizerAccountView.swift */; };
+		499CE0522C5266CC001B33A7 /* AppitizerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE0512C5266CC001B33A7 /* AppitizerModel.swift */; };
+		499CE0542C5272FC001B33A7 /* AppetizerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE0532C5272FC001B33A7 /* AppetizerCell.swift */; };
+		499CE0562C527680001B33A7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE0552C527680001B33A7 /* NetworkManager.swift */; };
+		499CE0582C527835001B33A7 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE0572C527835001B33A7 /* APIError.swift */; };
+		499CE05A2C52CD5B001B33A7 /* AppetizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE0592C52CD5B001B33A7 /* AppetizerViewModel.swift */; };
+		499CE05C2C52D010001B33A7 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE05B2C52D010001B33A7 /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +31,12 @@
 		499CE04B2C525D5A001B33A7 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		499CE04D2C525D6C001B33A7 /* AppetizerOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerOrderView.swift; sourceTree = "<group>"; };
 		499CE04F2C525D84001B33A7 /* AppetizerAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerAccountView.swift; sourceTree = "<group>"; };
+		499CE0512C5266CC001B33A7 /* AppitizerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppitizerModel.swift; sourceTree = "<group>"; };
+		499CE0532C5272FC001B33A7 /* AppetizerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerCell.swift; sourceTree = "<group>"; };
+		499CE0552C527680001B33A7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		499CE0572C527835001B33A7 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		499CE0592C52CD5B001B33A7 /* AppetizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerViewModel.swift; sourceTree = "<group>"; };
+		499CE05B2C52D010001B33A7 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +76,12 @@
 				499CE04F2C525D84001B33A7 /* AppetizerAccountView.swift */,
 				499CE0412C525AD4001B33A7 /* Assets.xcassets */,
 				499CE0432C525AD4001B33A7 /* Preview Content */,
+				499CE0512C5266CC001B33A7 /* AppitizerModel.swift */,
+				499CE0532C5272FC001B33A7 /* AppetizerCell.swift */,
+				499CE0552C527680001B33A7 /* NetworkManager.swift */,
+				499CE0572C527835001B33A7 /* APIError.swift */,
+				499CE0592C52CD5B001B33A7 /* AppetizerViewModel.swift */,
+				499CE05B2C52D010001B33A7 /* Alert.swift */,
 			);
 			path = "SwiftUI-Food-App";
 			sourceTree = "<group>";
@@ -146,11 +164,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499CE0522C5266CC001B33A7 /* AppitizerModel.swift in Sources */,
 				499CE0402C525AD2001B33A7 /* AppetizerTabView.swift in Sources */,
 				499CE0502C525D84001B33A7 /* AppetizerAccountView.swift in Sources */,
 				499CE03E2C525AD2001B33A7 /* SwiftUI_Food_AppApp.swift in Sources */,
+				499CE0562C527680001B33A7 /* NetworkManager.swift in Sources */,
+				499CE0542C5272FC001B33A7 /* AppetizerCell.swift in Sources */,
 				499CE04E2C525D6C001B33A7 /* AppetizerOrderView.swift in Sources */,
+				499CE05A2C52CD5B001B33A7 /* AppetizerViewModel.swift in Sources */,
+				499CE05C2C52D010001B33A7 /* Alert.swift in Sources */,
 				499CE04C2C525D5A001B33A7 /* AppetizerListView.swift in Sources */,
+				499CE0582C527835001B33A7 /* APIError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

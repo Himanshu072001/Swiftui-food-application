@@ -12,9 +12,7 @@ struct AppetizerCell: View {
     
     var body: some View {
         HStack {
-            Image("asian-flank-steak")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+            AppetizerImage(imageUrl: appetizer.imageURL)
                 .frame(width: 132, height: 96)
                 .cornerRadius(12)
             

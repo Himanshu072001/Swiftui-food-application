@@ -24,7 +24,7 @@ struct AppetizerAccountView: View {
                     DatePicker("Birthday", selection: $viewModel.user.dob,
                                displayedComponents: .date)
                     Button {
-                        let _ = viewModel.isValidForm
+                        viewModel.saveUserInfo()
                     } label: {
                          Text("Save Changes")
                             .foregroundColor(.primaryGreen)
@@ -41,6 +41,9 @@ struct AppetizerAccountView: View {
                 }
             }
             .navigationTitle("👨‍💼 Account")
+        }
+        .onAppear() {
+            viewModel.getUserInfo()
         }
         .alert(item: $viewModel.alertItem ){alertItem in
             Alert(title: alertItem.title,

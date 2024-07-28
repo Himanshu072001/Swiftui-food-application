@@ -100,9 +100,12 @@ struct DetailsView: View {
 
 struct OrderButton: View {
     var price : Double
+    var isFromOrder: Bool = false
     
     var body: some View {
-        Text("$\(price,  specifier: "%.2f") - Add To Order")
+        Text(isFromOrder
+             ? "$\(price,  specifier: "%.2f") - Place Order"
+             : "$\(price,  specifier: "%.2f") - Add To Order")
             .font(.title3)
             .fontWeight(.semibold)
             .foregroundStyle(.white)

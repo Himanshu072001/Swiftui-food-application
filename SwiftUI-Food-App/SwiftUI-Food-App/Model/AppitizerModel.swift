@@ -13,7 +13,7 @@ struct AppetizerResponse: Codable {
 }
 
 // MARK: - Request
-struct Appetizer: Codable {
+struct Appetizer: Codable, Identifiable {
     let protein: Int
     let price: Double
     let name, description: String

@@ -8,29 +8,29 @@
 import SwiftUI
 
 struct AppetizerOrderView: View {
-    @StateObject var viewModel = OrderViewModel()
+    @EnvironmentObject var orderList : Order
     
     var body: some View {
         NavigationView {
             ZStack {
                 VStack {
                     List {
-                        ForEach(viewModel.appetizers, id: \.id) { appetizer in
+                        ForEach(orderList.items) { appetizer in
                             AppetizerCell(appetizer: appetizer)
                         }
                         .onDelete(perform: { indexSet in
-                            viewModel.appetizers.remove(atOffsets: indexSet)
+                            orderList.remove(indexSet)
                         })
                     }
                     
                     Button {
                         
                     } label: {
-                        OrderButton(price: 36.0, isFromOrder: true)
+                        OrderButton(price: orderList.totalPrice, isFromOrder: true)
                     }
                 }
                 
-                if viewModel.appetizers.isEmpty {
+                if orderList.items.isEmpty {
                     EmptySateView(title: "You did not added any dish yet",
                                   imageName: "empty-order")
                 }

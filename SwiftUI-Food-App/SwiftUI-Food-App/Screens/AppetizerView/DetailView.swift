@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
+    @EnvironmentObject var order: Order
     let appetizer: Appetizer
     @Binding var isShowingDetailView: Bool
     
@@ -15,12 +16,13 @@ struct DetailView: View {
         VStack {
             AppetizerImage(imageUrl: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
-                .frame(width: .infinity, height: 240)
+                .frame(height: 240)
             
             DetailsView(appetizer: appetizer)
             Spacer()
             Button {
-                
+                order.add(appetizer)
+                isShowingDetailView = false
             } label: {
                 OrderButton(price: appetizer.price)
             }

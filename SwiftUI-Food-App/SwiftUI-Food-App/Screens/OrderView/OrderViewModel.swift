@@ -8,7 +8,6 @@
 import Foundation
 
 final class OrderViewModel: ObservableObject {
-    @Published var appetizers : [Appetizer] = MockData.appetizerSample
     @Published var totalPrice: Double = 0.0
     
 }

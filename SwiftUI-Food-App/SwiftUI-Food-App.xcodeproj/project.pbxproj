@@ -29,6 +29,7 @@
 		499CE0782C563902001B33A7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE0772C563902001B33A7 /* UserModel.swift */; };
 		499CE07A2C563F48001B33A7 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE0792C563F48001B33A7 /* OrderViewModel.swift */; };
 		499CE07D2C56470E001B33A7 /* EmptySateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE07C2C56470E001B33A7 /* EmptySateView.swift */; };
+		499CE07F2C564CAA001B33A7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CE07E2C564CAA001B33A7 /* Order.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		499CE0772C563902001B33A7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		499CE0792C563F48001B33A7 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 		499CE07C2C56470E001B33A7 /* EmptySateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySateView.swift; sourceTree = "<group>"; };
+		499CE07E2C564CAA001B33A7 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				499CE0512C5266CC001B33A7 /* AppitizerModel.swift */,
 				499CE0772C563902001B33A7 /* UserModel.swift */,
+				499CE07E2C564CAA001B33A7 /* Order.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				499CE03E2C525AD2001B33A7 /* SwiftUI_Food_AppApp.swift in Sources */,
 				499CE0562C527680001B33A7 /* NetworkManager.swift in Sources */,
 				499CE05E2C537E8F001B33A7 /* LoadingView.swift in Sources */,
+				499CE07F2C564CAA001B33A7 /* Order.swift in Sources */,
 				499CE0542C5272FC001B33A7 /* AppetizerCell.swift in Sources */,
 				499CE04E2C525D6C001B33A7 /* AppetizerOrderView.swift in Sources */,
 				499CE0762C5589C4001B33A7 /* String+Extension.swift in Sources */,

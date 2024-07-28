@@ -8,11 +8,45 @@
 import SwiftUI
 
 struct AppetizerAccountView: View {
+    @StateObject var viewModel = AccountsViewModel()
+    
     var body: some View {
         NavigationView {
-            Text("Account view")
-
+            Form {
+                Section(header: Text("PERSONAL INFO")) {
+                    TextField("First Name", text: $viewModel.user.firstName)
+                    TextField("Last Name", text: $viewModel.user.lastName)
+                    TextField("Email", text: $viewModel.user.email)
+                        .keyboardType(.emailAddress)
+                        .textInputAutocapitalization(.none)
+                        .autocorrectionDisabled()
+                    
+                    DatePicker("Birthday", selection: $viewModel.user.dob,
+                               displayedComponents: .date)
+                    Button {
+                        let _ = viewModel.isValidForm
+                    } label: {
+                         Text("Save Changes")
+                            .foregroundColor(.primaryGreen)
+                    }
+                }
+                
+                Section(header: Text("REQUESTS")) {
+                    Toggle("Extra Napkins",
+                           isOn: $viewModel.user.extraNapkins)
+                        .tint(.primaryGreen)
+                    Toggle("Frequent Refills",
+                           isOn: $viewModel.user.refills)
+                        .tint(.primaryGreen)
+                }
+            }
             .navigationTitle("👨‍💼 Account")
+        }
+        .alert(item: $viewModel.alertItem ){alertItem in
+            Alert(title: alertItem.title,
+                  message: alertItem.message,
+                  dismissButton: alertItem.dismissButton)
+            
         }
     }
 }
